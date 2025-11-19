@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Appie</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              elms: ["'Elms Sans'", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-elms">
+    <!-- navbar start -->
+    <nav class="bg-blue-950 py-4">
+      <div
+        class="container px-8 lg:px-24 mx-auto flex justify-between items-center"
+      >
+        <!-- logo menu -->
+        <div class="flex space-x-8 justify-center items-center">
+          <!-- logo -->
+          <div class="cursor-pointer">
+            <img src="./assets/logo-3.png" alt="" />
+          </div>
+          <!-- menu -->
+          <div class="text-white">
+            <ul class="space-x-4 text-base font-semibold hidden lg:flex">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- button -->
+        <div class="space-x-4 text-white">
+          <button class="font-semibold">Login</button>
+          <button
+            class="bg-orange-600 py-3 px-5 rounded-lg font-semibold hover:bg-transparent border-2 border-orange-600 duration-300"
+          >
+            Get Started
+          </button>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar end -->
+    <!-- header start -->
+    <header class="bg-blue-900">
+      <div
+        class="text-white flex-col justify-center items-center pt-20 container h-screen mx-auto px-8 lg:px-24"
+      >
+        <!-- text -->
+        <div class="text-center py-16 space-y-8">
+          <h1 class="text-7xl font-semibold">
+            Creative war to <br />
+            Showcase your
+            <span class="text-orange-500">App</span>
+          </h1>
+          <p class="text-xl opacity-75">
+            Lorem ipsum dolor sit amet consectetur adipisicing. Asperiores, sit
+            amet consectetur qui neque?
+          </p>
+          <div class="space-x-3 flex justify-center items-center">
+            <button
+              class="bg-orange-600 py-3 px-5 rounded-lg font-semibold hover:bg-transparent border-2 border-orange-600 duration-300"
+            >
+              Get a quote
+            </button>
+            <button class="font-semibold flex items-center gap-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                version="1.1"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="512"
+                height="512"
+                x="0"
+                y="0"
+                viewBox="0 0 30.051 30.051"
+                style="enable-background: new 0 0 512 512"
+                xml:space="preserve"
+                class="w-5 h-5"
+              >
+                <g>
+                  <path
+                    d="m19.982 14.438-6.24-4.536a.752.752 0 0 0-1.195.607v9.069a.75.75 0 0 0 1.195.606l6.24-4.532a.747.747 0 0 0 0-1.214z"
+                    fill="#ffffff"
+                    opacity="1"
+                    data-original="#000000"
+                    class=""
+                  ></path>
+                  <path
+                    d="M15.026.002C6.726.002 0 6.728 0 15.028c0 8.297 6.726 15.021 15.026 15.021 8.298 0 15.025-6.725 15.025-15.021.001-8.3-6.727-15.026-15.025-15.026zm0 27.54c-6.912 0-12.516-5.601-12.516-12.514 0-6.91 5.604-12.518 12.516-12.518 6.911 0 12.514 5.607 12.514 12.518.001 6.913-5.603 12.514-12.514 12.514z"
+                    fill="#ffffff"
+                    opacity="1"
+                    data-original="#000000"
+                    class=""
+                  ></path>
+                </g>
+              </svg>
+              Play Video
+            </button>
+          </div>
+        </div>
+        <!-- image -->
+        <div
+          class="flex justify-center items-center mx-auto translate-y-28 py-4"
+        >
+          <img
+            class="flex justify-center items-center"
+            src="./assets/hero-thumb-4.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </header>
+    <!-- header end -->
+  </body>
+</html>
